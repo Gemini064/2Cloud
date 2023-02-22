@@ -1,6 +1,7 @@
 :root {
   --clr-blue: #214fff;
   --clr-darkblue: #1532a5;
+  --clr-blackblue: #112884;
   --clr-lightgrey: #e7e7e8;
   --clr-grey: #c7c7c7;
   --clr-darkgrey: #99999b;
@@ -8,6 +9,7 @@
   --clr-orange: #f09b12;
   --clr-yellow: #ffd700;
   --clr-lightgreenblue: #a7d2cd;
+  --clr-greenblue: #44baae;
   --ff-primary: HurmeGeometricSans2, Helvetica, Arial, sans-serif;
 }
 
@@ -118,11 +120,15 @@
   position: absolute;
   right: 4px;
   top: 4px;
-  background: var(--clr-lightgreenblue);
+  background-color: var(--clr-lightgreenblue);
   color: var(--clr-greyblue);
   font-weight: bolder;
   border-radius: 2px;
   height: 44px;
+  z-index: 3;
+}
+#search-btn:hover {
+  background-color: var(--clr-greenblue);
 }
 @media (min-width: 768px) {
   #google-logo {
@@ -182,16 +188,110 @@
   color: lightgreen;
 }
 
+/* dropdown */
+.dropdown {
+  position: relative;
+  transition-property: visibility, opacity;
+}
+.dropdown > .dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  background-color: var(--clr-darkblue);
+  width: fit-content;
+  z-index: 100;
+}
+.dropdown > .dropdown-content > a {
+  margin: auto;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.fa-star {
+  color: var(--clr-yellow);
+  font-size: 12px;
+  padding: 0px 7px;
+}
+.dropdown > .dropdown-content > a:hover {
+  background-color: var(--clr-blackblue);
+}
+.dropdown:hover > .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s;
+}
+.little-right-arr {
+  font-size: 8px;
+  padding-right: 8px;
+}
+.all-about-dropdown > a {
+  border: 1px solid var(--clr-blackblue);
+  width: 500px;
+  height: 60px;
+}
+.other-dropdown > a {
+  width: 225px;
+  height: 30px;
+  padding: 15px 10px;
+}
+#btn-nav-item > .contact-dropdown {
+  padding: 15px 20px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  top: calc(100% + 8px);
+  left: -50%;
+  color: var(--clr-greyblue);
+  font-weight: bolder;
+  font-size: 14px;
+  box-shadow: 0px 0px 10px 8px rgba(200, 200, 200, 0.5);
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid white;
+  position: absolute;
+  top: -9px;
+  right: 25%;
+}
+#btn-nav-item > .contact-dropdown > p {
+  margin-bottom: 0px;
+}
+.contact-dropdown > .contact-btn {
+  margin: auto;
+  width: 200px;
+  margin-bottom: 25px;
+}
+#phone-number {
+  color: var(--clr-blue);
+  background-color: white;
+  font-size: 17px;
+  margin: 0px 0px 15px 0px;
+}
+#phone-number:hover {
+  text-decoration: underline;
+}
 /* button */
-button {
+.contact-btn {
   background-color: var(--clr-orange);
-  padding: 9px 12px;
+  padding: 7px 12px;
   border-radius: 22px;
   color: white;
   font-weight: bolder;
   border: 0px;
+  font-size: 14px;
 }
-button:hover {
+.contact-btn:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
     var(--clr-orange);
 }
