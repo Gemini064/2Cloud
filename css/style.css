@@ -6,8 +6,10 @@
   --clr-grey: #c7c7c7;
   --clr-darkgrey: #99999b;
   --clr-greyblue: #3c4858;
+  --clr-lightorange: #f3af42;
   --clr-orange: #f09b12;
   --clr-yellow: #ffd700;
+  --clr-green: #32cd32;
   --clr-lightgreenblue: #a7d2cd;
   --clr-greenblue: #44baae;
   --ff-primary: HurmeGeometricSans2, Helvetica, Arial, sans-serif;
@@ -18,6 +20,20 @@
   padding: 0;
   font-family: var(--ff-primary);
   color: var(--clr-greyblue);
+}
+
+/* section: general */
+section {
+  padding: 40px 50px;
+  text-align: center;
+}
+section > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--clr-greyblue);
+}
+.grey-bg {
+  background-color: rgb(245, 245, 245);
 }
 
 /* banner */
@@ -320,14 +336,20 @@
 .caro-port > div > h1 {
   color: white;
   font-weight: bolder;
+  font-size: 30px;
 }
 .caro-prod > div > h1 {
   color: #515092;
   font-weight: bolder;
+  font-size: 30px;
+}
+.carousel-item {
+  height: 450px;
 }
 @media (min-width: 768px) {
   .carousel-item {
     position: relative;
+    height: fit-content;
   }
   .caro-port,
   .caro-prod {
@@ -335,6 +357,12 @@
     bottom: 30%;
     left: 10%;
     text-align: left;
+  }
+  .caro-port > div > h1 {
+    font-size: 50px;
+  }
+  .caro-prod > div > h1 {
+    font-size: 50px;
   }
 }
 
@@ -351,6 +379,223 @@
 .contact-btn:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
     var(--clr-orange);
+}
+
+/* section: trust brand */
+.trust-brand > h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 5px 0px;
+}
+.trust-brand > h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.trust-brand > p {
+  font-size: 18px;
+  width: 80%;
+  padding: 5px 35px;
+  line-height: 1.5em;
+  margin: auto;
+}
+.brand-img-div {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: center;
+}
+.brand-img-div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.brand-img-div > div > img {
+  height: 30%;
+  opacity: 0.3;
+}
+
+/* section latest products */
+.latest-product > button {
+  background-color: var(--clr-lightorange);
+  padding: 7px 50px;
+  border-radius: 22px;
+  color: white;
+  font-weight: bolder;
+  border: 0px;
+  font-size: 14px;
+}
+.latest-product > button:hover {
+  background-color: var(--clr-orange);
+}
+
+/* section brands overview */
+.brands-overview > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands-overview > div > img {
+  max-width: 80%;
+  opacity: 0.5;
+}
+
+/* section product overview */
+.product-overview .row {
+  width: 80%;
+  margin: auto;
+}
+.product-overview button {
+  background-color: var(--clr-blue);
+  color: white;
+  width: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 22px;
+  border: 0px;
+  transition: 0.2s;
+}
+.product-overview button:hover {
+  background-color: var(--clr-green);
+  cursor: context-menu;
+}
+.product-overview div {
+  padding: 3px;
+}
+@media (min-width: 768px) {
+  .product-overview div:nth-child(1) {
+    text-align: right;
+  }
+  .product-overview div:nth-child(2) {
+    text-align: left;
+  }
+}
+
+/* section contact */
+.contact-cnt-sec > .contact-cnt,
+.contact-icon,
+.contact-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-cnt-sec {
+  margin-left: -13px;
+  margin-right: -13px;
+}
+.contact-detail {
+  margin-top: 15px;
+}
+.contact-icon-circle {
+  background-color: var(--clr-blue);
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--clr-blue);
+}
+.contact-icon-circle > i {
+  font-size: 40px;
+  color: white;
+}
+.contact-detail:hover .with-fontawesome {
+  background-color: white;
+}
+.contact-detail:hover .contact-icon-circle > i {
+  color: var(--clr-blue);
+}
+.contact-icon-circle > img {
+  width: 55%;
+}
+.contact-desc {
+  color: var(--clr-blue);
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  padding: 0px;
+}
+
+/* section FAQ */
+.blue-header {
+  color: var(--clr-blue);
+}
+.FAQ p {
+  text-align: left;
+}
+.question {
+  background: white;
+  padding: 10px 15px;
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.question > p {
+  color: var(--clr-blue);
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+/* section message */
+.message {
+  background: var(--clr-darkgrey);
+  text-align: left;
+}
+.message img {
+  width: 250px;
+  padding: 0px 30px 20px 30px;
+}
+.link > p {
+  font-weight: bolder;
+  margin: 0px;
+}
+.link > p,
+.link > a {
+  display: block;
+  width: fit-content;
+  color: white;
+  font-size: 14px;
+  padding: 3px 0px;
+}
+.link > a:hover {
+  color: var(--clr-blue);
+  text-decoration: none;
+}
+.form button {
+  padding: 4px 50px;
+  border: 0px;
+  background-color: #616367;
+  color: white;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.form > p {
+  margin: 0px 5px;
+}
+.form {
+  padding: 0px;
+}
+.form > .input-box {
+  margin: 10px 5px;
+}
+.form .input-box input {
+  padding: 8px;
+  border: 0px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+.form > .row > .input-box {
+  padding: 5px;
+}
+.form button:hover {
+  background-color: var(--clr-blue);
 }
 
 /* footer */

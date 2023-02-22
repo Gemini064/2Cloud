@@ -278,13 +278,13 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" style="background-color: #2c89c3">
           <img
             class="d-block w-100"
             src="./images/carousel/portfolio.png"
             alt="1st slide - portfolio"
           />
-          <div class="caro-port carousel-caption d-none d-md-block">
+          <div class="caro-port carousel-caption d-md-block">
             <div class="caro-txt-div">
               <h1>Browse our<br />Custom Products</h1>
               <button id="caro-btn-port" class="carousel-btn">
@@ -293,20 +293,20 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" style="background-color: #9bcbe7">
           <img
             class="d-block w-100"
             src="./images/carousel/award_winner.png"
             alt="2nd slide - award winner"
           />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" style="background-color: #bbb9eb">
           <img
             class="d-block w-100"
             src="./images/carousel/feel_good.png"
             alt="3rd slide - feel good"
           />
-          <div class="caro-prod carousel-caption d-none d-md-block">
+          <div class="caro-prod carousel-caption d-md-block">
             <div class="caro-txt-div">
               <h1>
                 Merch that makes<br />
@@ -321,87 +321,347 @@
       </div>
     </div>
 
-    <section>
+    <section class="trust-brand">
       <h2>Trusted By</h2>
-      <div class="brand-img-div">
-        <img
-          class="col-sm-4 col-md-3"
-          src="./images/logos/dulux.png"
-          alt="dulux"
-        />
-        <img
-          class="col-sm-4 col-md-3"
-          src="./images/logos/coopers.png"
-          alt="coopers"
-        />
-        <img
-          class="col-sm-4 col-md-3"
-          src="./images/logos/petbarn.png"
-          alt="petbarn"
-        />
-        <img
-          class="col-sm-4 col-md-3"
-          src="./images/logos/loreal.png"
-          alt="loreal"
-        />
+      <div class="brand-img-div row">
+        <div class="col-sm-4 col-md-3">
+          <img src="./images/logos/dulux.png" alt="dulux" />
+        </div>
+        <div class="col-sm-4 col-md-3">
+          <img
+            src="./images/logos/coopers.png"
+            alt="dulux"
+            style="height: 50%"
+          />
+        </div>
+        <div class="col-sm-4 col-md-3">
+          <img src="./images/logos/petbarn.png" alt="dulux" />
+        </div>
+        <div class="col-sm-4 col-md-3">
+          <img
+            src="./images/logos/loreal.png"
+            alt="dulux"
+            style="height: 45%"
+          />
+        </div>
       </div>
+      <h1>Home of Australia's best custom promotional products range</h1>
+      <p>
+        We create promotional products clients and teams want to keep. We're
+        passionate about exceptional customer service, high-quality goods and
+        sustainable product design.
+      </p>
+      <p>
+        With teams in Melbourne, Sydney, and the Gold Coast, we deliver
+        everything from <a href="#">promotional bags</a> to
+        <a href="#">branded uniforms</a> to <a href="#">drink bottles</a> and
+        <a href="#">pens</a> across Australia, find out why we are the fastest
+        growing supplier in the promotional products industry.
+      </p>
     </section>
 
-    <section>
-      <h2>Home of Australia's best custom promotional products range</h2>
-      We create promotional products clients and teams want to keep. We're
-      passionate about exceptional customer service, high-quality goods and
-      sustainable product design. With teams in Melbourne, Sydney, and the Gold
-      Coast, we deliver everything from promotional bags to branded uniforms to
-      drink bottles and pens across Australia, find out why we are the fastest
-      growing supplier in the promotional products industry.
+    <section class="latest-product">
       <button>SEE ALL LATEST PRODUCTS</button>
     </section>
 
     <section>
       <p>Why choose Good Things?</p>
-      <div class="brands-overview"></div>
+      <div class="brands-overview row">
+        <div class="col-sm-6 col-md-2">
+          <img src="./images/brands/flyingsolo.svg" alt="flying solo logo" />
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <img src="./images/brands/afr.svg" alt="afr logo" />
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <img src="./images/brands/bandt.svg" alt="bnadt logo" />
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <img
+            src="./images/brands/smartcompany.svg"
+            alt="smart company logo"
+          />
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <img src="./images/brands/ceo.svg" alt="ceo logo" />
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <img
+            src="./images/brands/dynamicbusiness.svg"
+            alt="dynamic business logo"
+          />
+        </div>
+      </div>
     </section>
 
     <section>
-      <h1>What our clients says</h1>
+      <h2>What our clients says<span id="stars">★★★★★</span></h2>
     </section>
 
-    <section>
+    <section class="product-overview">
       <h2>Our Brandable Products</h2>
-      <button>BROWSE ALL PRODUCTS</button>
-      <button>VIEW PORTFOLIO</button>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <button>BROWSE ALL PRODUCTS</button>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <button class="col-sm-12 col-md-6">VIEW PORTFOLIO</button>
+        </div>
+      </div>
     </section>
 
     <section>
       <h2>Testimonials</h2>
+      <div
+        id="carouselTestimonials"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselTestimonials"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselTestimonials" data-slide-to="1"></li>
+          <li data-target="#carouselTestimonials" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-color: #2c89c3">
+            <img
+              class="d-block w-100"
+              src="./images/testimonial/Coopers_Cord.png"
+              alt="1st slide - portfolio"
+            />
+            <div class="discription">
+              <p>
+                Thanks to the efforts and expertise of Good Things, we were able
+                to activate the brand successfully to our target audience
+                through merchandise that would resonate with the customer. The
+                supporting merchandise to the Oh My Cord campaign has been so
+                successful we are doing it again this year.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-color: #9bcbe7">
+            <img
+              class="d-block w-100"
+              src="./images/testimonial/LOreal.png"
+              alt="2nd slide - award winner"
+            />
+            <div class="discription">
+              <p>
+                Merchandise is an important part of our brand strategy and Good
+                Things have been integral to our success. Good Things
+                proactively work with us and bring ideas and suggestions to our
+                marketing activations across the year. We are always pleased
+                with the quality and their communication standards are second to
+                none.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-color: #bbb9eb">
+            <img
+              class="d-block w-100"
+              src="./images/testimonial/Vegemite.png"
+              alt="3rd slide - feel good"
+            />
+            <div class="discription">
+              We’ve trusted Good Things on a number of mitey merchandise
+              projects and the Ugly Sweater is no exception. Our brief was to
+              create the next piece of iconic mitey merchandise for our
+              Christmas in July campaign and what speaks Aussie Christmas in
+              July better than a Vegemite branded Ugly Christmas Sweater.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section class="grey-bg">
       <h2>Your brand's own merch store</h2>
       <h2>New on our blog</h2>
     </section>
 
-    <section>
-      <h2>Good Things come to those who contact us</h2>
+    <section class="contact">
+      <h2 class="blue-header">Good Things come to those who contact us</h2>
+      <div class="contact-cnt-sec row">
+        <div class="contact-cnt col-sm-12 col-md-2">
+          <div class="contact-detail row">
+            <div class="contact-icon">
+              <div class="contact-icon-circle with-fontawesome">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </div>
+            <div class="contact-desc col-sm-6 col-md-12">
+              HELLO@GOODTHINGS.COM.AU
+            </div>
+          </div>
+        </div>
+        <div class="contact-cnt col-sm-12 col-md-2">
+          <div class="contact-detail row">
+            <div class="contact-icon col-sm-6 col-md-12">
+              <div class="contact-icon-circle with-fontawesome">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+            </div>
+            <div class="contact-desc col-sm-6 col-md-12">1800 659 649</div>
+          </div>
+        </div>
+        <div class="contact-cnt col-sm-12 col-md-2">
+          <div class="contact-detail row">
+            <div class="contact-icon col-sm-6 col-md-12">
+              <div class="contact-icon-circle with-fontawesome">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+            </div>
+            <div class="contact-desc col-sm-6 col-md-12">
+              FACEBOOK MESSENGER
+            </div>
+          </div>
+        </div>
+        <div class="contact-cnt col-sm-12 col-md-2">
+          <div class="contact-detail row">
+            <div class="contact-icon col-sm-6 col-md-12">
+              <div class="contact-icon-circle">
+                <img src="./images/logos/melbourne.png" alt="melbourne" />
+              </div>
+            </div>
+            <div class="contact-desc col-sm-6 col-md-12">MELBOURNE</div>
+          </div>
+        </div>
+        <div class="contact-cnt col-sm-12 col-md-2">
+          <div class="contact-detail row">
+            <div class="contact-icon col-sm-6 col-md-12">
+              <div class="contact-icon-circle">
+                <img src="./images/logos/sydney.png" alt="sydney" />
+              </div>
+            </div>
+            <div class="contact-desc col-sm-6 col-md-12">SYDNEY</div>
+          </div>
+        </div>
+        <div class="contact-cnt col-sm-12 col-md-2">
+          <div class="contact-detail row">
+            <div class="contact-icon col-sm-6 col-md-12">
+              <div class="contact-icon-circle">
+                <img src="./images/logos/gold-coast.png" alt="gold coast" />
+              </div>
+            </div>
+            <div class="contact-desc col-sm-6 col-md-12">GOLD COAST</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>We’ve answered your Good FAQs.</h2>
+    <section class="FAQ grey-bg">
+      <h2 class="blue-header">We've answered your Good FAQs.</h2>
       <p>
         Since 2011 Good Things has been dedicated to making your branded
-        promotional products stand out — with 100% accuracy and quality. We’ve
-        worked with only the best, most reliable and highest-quality suppliers
-        of promotional products over the last 10 years. We have competitive
-        prices and we will beat any competitor's price! Learn why our legendary
-        service earns the trust and confidence of the biggest companies,
-        universities and schools in Australia.
+        <a href="#">promotional products</a> stand out — with 100% accuracy and
+        quality. We’ve worked with only the best, most reliable and
+        highest-quality suppliers of promotional products over the last 10
+        years. We have competitive prices and we will beat any competitor's
+        price! Learn why our legendary service earns the trust and confidence of
+        the biggest companies, universities and schools in Australia.
       </p>
+      <div class="row">
+        <div class="left-qs col-sm-12 col-md-6">
+          <div class="question">
+            <p>What services does Good Things provide?</p>
+          </div>
+          <div class="question">
+            <p>Why should I use promotional products?</p>
+          </div>
+          <div class="question">
+            <p>What are your most popular promotional products?</p>
+          </div>
+          <div class="question"><p>Are your products Australian made?</p></div>
+          <div class="question">
+            <p>How long does it take to get a quote?</p>
+          </div>
+          <div class="question">
+            <p>What format should I supply my artwork in?</p>
+          </div>
+          <div class="question"><p>What is a vector file?</p></div>
+        </div>
+        <div class="right-qs col-sm-12 col-md-6">
+          <div class="question">
+            <p>
+              Can you create custom packaging for a gift pack or<br />product
+              order?
+            </p>
+          </div>
+          <div class="question">
+            <p>
+              Can I track my order from production right through to<br />delivery?
+            </p>
+          </div>
+          <div class="question"><p>How long does delivery take?</p></div>
+          <div class="question"><p>Do you ship worldwide?</p></div>
+          <div class="question">
+            <p>What if I receive more or less units than my order?</p>
+          </div>
+          <div class="question">
+            <p>I'm unsatisfied with my order, can I get a refund?</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
+    <section class="message">
       <img src="./images/logos/logo-white.svg" alt="logo - good things" />
-      <p>© 2023 Promotive Group Pty Ltd</p>
-    </footer>
+      <div class="msg-details row">
+        <div class="links col-sm-12 col-md-9 row">
+          <div class="link col-sm-6 col-md-4">
+            <p>GOOD THINGS</p>
+            <a href="#">About Us</a>
+            <a href="#">In The Media</a>
+            <a href="#">Our Blog</a>
+            <a href="#">Process</a>
+            <a href="#">Your Merch Store</a>
+          </div>
+          <div class="link col-sm-6 col-md-4">
+            <p><br /></p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Product Guides</a>
+            <a href="#">Testimonials</a>
+          </div>
+          <div class="link col-sm-6 col-md-4">
+            <p>HELP AND SUPPORT</p>
+            <a href="#">My Account</a>
+            <a href="#">FAQs</a>
+            <a href="#">PMS Chart</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <div class="form link col-sm-12 col-md-3">
+          <p>CONTACT US</p>
+          <div class="input-box">
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="row">
+            <div class="input-box col-sm-12 col-md-6">
+              <input type="text" placeholder="Email address" />
+            </div>
+            <div class="input-box col-sm-12 col-md-6">
+              <input type="text" placeholder="Phone number" />
+            </div>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Message" />
+          </div>
+          <div class="input-box">
+            <button>SEND</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer>
+        <p>© 2023 Promotive Group Pty Ltd</p>
+      </footer>
+    </section>
   </body>
 </html>
