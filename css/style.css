@@ -533,6 +533,15 @@ section > h2 {
   align-items: center;
   cursor: pointer;
   border-radius: 5px;
+  position: relative;
+  cursor: context-menu;
+}
+.fa-angle-down {
+  color: var(--clr-blue);
+  font-weight: bolder;
+  position: absolute;
+  right: 15px;
+  transition: all 0.5s ease;
 }
 .question > p {
   color: var(--clr-blue);
@@ -540,6 +549,11 @@ section > h2 {
   display: flex;
   margin-bottom: 0px;
   font-size: 18px;
+}
+.answer {
+  text-align: left;
+  padding: 15px;
+  display: none;
 }
 
 /* section message */
