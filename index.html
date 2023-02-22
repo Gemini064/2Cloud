@@ -20,6 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/homepage.js"></script>
     <title>Good Things Australia | Quality Custom Promotional Products</title>
   </head>
   <body>
@@ -62,7 +63,11 @@
       </div>
       <div id="search-section" class="col-md-6 col-sm-12">
         <div id="google-review">
-          <img id="google-logo" src="./images/logos/google-icon.png" alt="" />
+          <img
+            id="google-logo"
+            src="./images/logos/google-icon.png"
+            alt="google logo"
+          />
           <div id="google-review-cnt">
             <span id="stars">★★★★★</span>
             <span id="review-cnt">250+ Reviews</span>
@@ -258,11 +263,144 @@
       </ul>
     </nav>
 
-    <section></section>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="./images/carousel/portfolio.png"
+            alt="1st slide - portfolio"
+          />
+          <div class="caro-port carousel-caption d-none d-md-block">
+            <div class="caro-txt-div">
+              <h1>Browse our<br />Custom Products</h1>
+              <button id="caro-btn-port" class="carousel-btn">
+                VIEW OUR PORTFOLIO
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="./images/carousel/award_winner.png"
+            alt="2nd slide - award winner"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="./images/carousel/feel_good.png"
+            alt="3rd slide - feel good"
+          />
+          <div class="caro-prod carousel-caption d-none d-md-block">
+            <div class="caro-txt-div">
+              <h1>
+                Merch that makes<br />
+                you feel GOOD
+              </h1>
+              <button id="caro-btn-prod" class="carousel-btn">
+                VIEW ECO-FRIENDLY PRODUCTS
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <section></section>
+    <section>
+      <h2>Trusted By</h2>
+      <div class="brand-img-div">
+        <img
+          class="col-sm-4 col-md-3"
+          src="./images/logos/dulux.png"
+          alt="dulux"
+        />
+        <img
+          class="col-sm-4 col-md-3"
+          src="./images/logos/coopers.png"
+          alt="coopers"
+        />
+        <img
+          class="col-sm-4 col-md-3"
+          src="./images/logos/petbarn.png"
+          alt="petbarn"
+        />
+        <img
+          class="col-sm-4 col-md-3"
+          src="./images/logos/loreal.png"
+          alt="loreal"
+        />
+      </div>
+    </section>
+
+    <section>
+      <h2>Home of Australia's best custom promotional products range</h2>
+      We create promotional products clients and teams want to keep. We're
+      passionate about exceptional customer service, high-quality goods and
+      sustainable product design. With teams in Melbourne, Sydney, and the Gold
+      Coast, we deliver everything from promotional bags to branded uniforms to
+      drink bottles and pens across Australia, find out why we are the fastest
+      growing supplier in the promotional products industry.
+      <button>SEE ALL LATEST PRODUCTS</button>
+    </section>
+
+    <section>
+      <p>Why choose Good Things?</p>
+      <div class="brands-overview"></div>
+    </section>
+
+    <section>
+      <h1>What our clients says</h1>
+    </section>
+
+    <section>
+      <h2>Our Brandable Products</h2>
+      <button>BROWSE ALL PRODUCTS</button>
+      <button>VIEW PORTFOLIO</button>
+    </section>
+
+    <section>
+      <h2>Testimonials</h2>
+    </section>
+
+    <section>
+      <h2>Your brand's own merch store</h2>
+      <h2>New on our blog</h2>
+    </section>
+
+    <section>
+      <h2>Good Things come to those who contact us</h2>
+    </section>
+
+    <section>
+      <h2>We’ve answered your Good FAQs.</h2>
+      <p>
+        Since 2011 Good Things has been dedicated to making your branded
+        promotional products stand out — with 100% accuracy and quality. We’ve
+        worked with only the best, most reliable and highest-quality suppliers
+        of promotional products over the last 10 years. We have competitive
+        prices and we will beat any competitor's price! Learn why our legendary
+        service earns the trust and confidence of the biggest companies,
+        universities and schools in Australia.
+      </p>
+    </section>
 
     <footer>
+      <img src="./images/logos/logo-white.svg" alt="logo - good things" />
       <p>© 2023 Promotive Group Pty Ltd</p>
     </footer>
   </body>
