@@ -1,4 +1,5 @@
 :root {
+  --clr-lightblue: #dbfbff;
   --clr-blue: #214fff;
   --clr-darkblue: #1532a5;
   --clr-blackblue: #112884;
@@ -35,6 +36,12 @@ section > h2 {
 .grey-bg {
   background-color: rgb(245, 245, 245);
 }
+.blue-header {
+  color: var(--clr-blue);
+}
+.grey-header {
+  color: #616367;
+}
 
 /* banner */
 .banner {
@@ -66,9 +73,6 @@ section > h2 {
   .banner > .navbar-nav > li > img {
     margin-right: 15px;
     width: 15px;
-  }
-  .banner > .navbar-nav > li > span {
-    cursor: context-menu;
   }
 }
 
@@ -303,7 +307,6 @@ section > h2 {
 
 /* carousel */
 .carousel-indicators li {
-  cursor: context-menu;
   width: 12px;
   height: 12px;
   border-radius: 100%;
@@ -365,8 +368,6 @@ section > h2 {
     font-size: 50px;
   }
 }
-
-/* button */
 .contact-btn {
   background-color: var(--clr-orange);
   padding: 7px 12px;
@@ -428,6 +429,51 @@ section > h2 {
   background-color: var(--clr-orange);
 }
 
+/* section latest product */
+
+/* section best choice */
+.best-choice {
+  background-color: var(--clr-lightblue);
+  padding-top: 80px;
+}
+.reason-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reason-title > i {
+  color: white;
+  background: #033f87;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #033f87;
+  border-radius: 100%;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reasons-wrapper {
+  padding-top: 25px;
+}
+.reason-info h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--clr-greyblue);
+}
+.reason-title > h1 {
+  padding-left: 15px;
+}
+.reason-desc {
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.best-choice img {
+  width: 80%;
+}
+
 /* section brands overview */
 .brands-overview > div {
   display: flex;
@@ -439,28 +485,119 @@ section > h2 {
   opacity: 0.5;
 }
 
-/* section product overview */
+/* section review overview */
+.review {
+  border: 1px solid #ededed;
+  background-color: white;
+  height: 250px;
+  overflow-y: scroll;
+  text-align: left;
+  padding: 10px;
+  margin-top: 10px;
+}
+.review-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.review > p {
+  margin: 0px;
+}
+.review > img {
+  width: 25px;
+  position: absolute;
+  right: 5px;
+}
+#review-stars {
+  font-size: 30px;
+  padding: 0px 5px;
+}
+.name {
+  color: #427fed;
+  font-weight: bolder;
+}
+.single-review-star {
+  color: darkorange;
+  font-size: 25px;
+  line-height: 20px;
+}
+.single-review-date {
+  color: #999999;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+.single-review-comment {
+  color: #777777;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* section brandable product */
 .product-overview .row {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin: 0px;
+}
+.img-div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.img-div:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}
+.img-div > p,
+.img-div > span {
+  color: white;
+  font-weight: bolder;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.img-div > p {
+  display: block;
+  margin: 0px;
+  font-size: 30px;
+}
+.img-div > span {
+  display: none;
+  font-size: 15px;
+  text-align: center;
+}
+.img-div:hover > p {
+  display: none;
+}
+.img-div:hover > span {
+  display: block;
+}
+.left-top-prod,
+.right-top-prod,
+.left-bottom-prod,
+.right-bottom-prod {
+  width: 100%;
+  height: 400px;
+  padding: 0px;
+}
+.right-top-prod .img-div,
+.left-bottom-prod .img-div {
+  height: 200px;
 }
 .product-overview button {
   background-color: var(--clr-blue);
   color: white;
-  width: 50%;
+  width: 40%;
   font-size: 12px;
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 22px;
   border: 0px;
   transition: 0.2s;
+  margin-top: 30px;
 }
 .product-overview button:hover {
   background-color: var(--clr-green);
-  cursor: context-menu;
-}
-.product-overview div {
-  padding: 3px;
 }
 @media (min-width: 768px) {
   .product-overview div:nth-child(1) {
@@ -471,7 +608,113 @@ section > h2 {
   }
 }
 
+/* section testimonial  */
+#carouselTestimonials > .carousel-indicators {
+  bottom: -70px;
+}
+#carouselTestimonials .carousel-item {
+  height: fit-content;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  padding: 15px 15px 0px 15px;
+}
+.description > p {
+  color: #646268;
+}
+
+/* section merch store */
+.merch-store {
+  background: linear-gradient(210deg, #bbe7fc 2%, #a659df);
+  margin-top: 50px;
+}
+.merch-store button {
+  display: block;
+  background-color: var(--clr-blue);
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  margin: 10px;
+}
+.merch-store button:hover {
+  background-color: #002cd4;
+}
+.merch-store-left > h1 {
+  text-align: left;
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.merch-store-left > h2 {
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
+.merch-store-left > h2 > span {
+  font-weight: bolder;
+  color: white;
+}
+.merch-store-left > p {
+  text-align: left;
+  color: white;
+}
+.merch-store-right > img {
+  width: 100%;
+}
+
+/* section blog */
+.blog-sec {
+  display: block;
+  width: 100%;
+}
+.blog-info {
+  width: 80%;
+  padding: 10px;
+}
+.blog-img {
+  height: 155px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.blog-img > img {
+  width: 100%;
+}
+.blog-title {
+  color: var(--clr-greyblue);
+  font-weight: bolder;
+  margin-bottom: 5px;
+  width: 90%;
+  text-align: left;
+}
+.blog-date {
+  color: #646268;
+  opacity: 0.7;
+  width: 90%;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .blog-info {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
 /* section contact */
+.contact {
+  margin-bottom: 50px;
+}
 .contact-cnt-sec > .contact-cnt,
 .contact-icon,
 .contact-detail {
@@ -502,6 +745,7 @@ section > h2 {
 }
 .contact-detail:hover .with-fontawesome {
   background-color: white;
+  cursor: pointer;
 }
 .contact-detail:hover .contact-icon-circle > i {
   color: var(--clr-blue);
@@ -519,8 +763,9 @@ section > h2 {
 }
 
 /* section FAQ */
-.blue-header {
-  color: var(--clr-blue);
+.FAQ {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .FAQ p {
   text-align: left;
@@ -534,7 +779,6 @@ section > h2 {
   cursor: pointer;
   border-radius: 5px;
   position: relative;
-  cursor: context-menu;
 }
 .fa-angle-down {
   color: var(--clr-blue);
